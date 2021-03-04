@@ -1,0 +1,487 @@
+@import url('https://fonts.googleapis.com/css?family=Bebas+Neue');
+
+* {
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+
+body {
+	font-family:'Bebas Neue';
+}
+
+ul {
+	list-style-type: none;
+}
+
+a {
+	text-decoration: none;
+	color: #000;
+	font-size: 20px;
+	text-transform: uppercase;
+}
+
+#zaglavlje, #slajder, #futer, #naslov, #featured, #ponuda, #omotColl {
+	width: 100%;
+}
+
+/* -------------------------------------------------HEDER */
+
+#zaglavlje {
+	position: fixed;
+	height: 80px;
+	background: #fff;
+	box-shadow: 3px 3px 5px #666;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	z-index: 2;
+}
+
+#logo {
+	height: 80px;
+	width: 90px;
+	margin-left: 50px;
+	cursor: pointer;
+}
+
+#zaglavlje nav {
+	margin-left: 200px;
+}
+
+#zaglavlje nav .aktivanlink{
+	
+}
+
+#ikonice {
+	height: 35px;
+	width:331px;
+	display: flex;
+	flex-direction: row;
+	margin-right: 50px;
+}
+
+#zaglavlje nav ul li{
+	display: inline-block;
+	margin: 0px 20px;
+}
+
+#ikonice ul li{
+	display: inline-block;
+	margin: 0px 10px;
+}
+
+#nav ul li{
+	color: #000;
+}
+
+.linkovi li a {
+	transition: all 0.5s;
+}
+
+.linkovi li a:hover ,#kolekcije ul li a:hover, #about ul li a span:hover, #futermeni ul li a:hover{
+	color: #2a4b9a;
+}
+
+button, .dugme{
+	padding: 9px 25px;
+	background-color: #fff;
+	border: 0.5px solid #000;
+	border-radius: 100px;
+	cursor: pointer;
+}
+
+button:hover, .dugme:hover{
+	background-color: #2a4b9a;
+	border: 0.5px solid #fff;
+	color: #fff;
+}
+
+
+/* ------------------------------------GLAVNA SEKCIJA INDEXA */
+
+
+#slajder {
+	height: 650px;
+	background-image: url('../images/Sample.jpg');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	/*background-size: cover; */
+	background-position: center;
+	padding-top: 80px;
+	box-sizing: border-box;
+}
+
+#tekstSlajdera{
+	width: 400px;
+	height: 100%;
+	margin-left: 30px;
+	margin-top: 40px;
+}
+
+#tekstSlajdera ul li {
+	display: inline-block;
+}
+
+#tekstSlajdera ul li img{
+	height: 300px;
+	width:inherit;
+}
+
+#tekstSlajdera ul li p{
+	font-size: 25px;
+}
+
+#tekstSlajdera h1 {
+	text-align: center;
+	font-size:60px;
+	text-transform: uppercase;
+}
+
+/*-------------------------------------------------------------*/
+
+#naslov {
+	height: 200px;
+	text-align: center;
+	padding: 40px;
+}
+
+#naslov:after {
+    content: "";
+    display: block;
+    margin: 0 auto;
+    width: 70%;
+    padding-top: 40px;
+    border-bottom: 3px solid black;
+}
+
+#naslov h1 {
+	font-size: 50px;
+	margin-bottom: 10px;
+}
+
+#naslov h2 {
+	font-size: 20px;
+}
+
+/*-------------------------------------------------------------*/
+
+.featured {
+	height: 500px;
+	padding: 35px 0px;
+	display: flex;
+	flex-direction:row;
+	justify-content: space-around;
+}
+
+h3 {
+	font-size: 25px;
+	text-align: center;
+	margin: 30px 20px 0px 0px;
+}
+
+.artikal {
+	text-align: center;
+	background: #DCDCDC;
+	overflow: hidden;
+}
+
+.artikal img{
+	height:370px;
+	width: inherit;
+	transition: transform .2s;
+}
+
+.omot {
+	overflow:hidden;
+}
+
+.artikal:hover img{
+  transform: scale(1.1);
+}
+
+/*---------------------------------------------------------------------*/
+
+#ponuda {
+	height: 300px;
+	padding: 70px 30px 130px 30px;
+	margin-top: 60px;
+	text-align: center;
+	box-shadow: 3px 3px 10px #666;
+}
+
+#ponuda p{
+	font-size: 20px;
+	margin-bottom: 20px;
+}
+
+.link {
+	margin: 0px auto;
+	height: 100px;
+	width: 300px;
+	background: rgba(42, 75, 154, 0.1);
+	border: 2px solid #000;
+	border-radius: 100px;
+	color: #000;
+	font-size: 35px;
+	text-align: center;
+}
+
+.link h4 {
+	margin-top:25px;
+}
+
+.link:hover {
+	background: rgba(42, 75, 154, 0.8);
+	border:2px solid #fff;
+	color: #fff;
+}
+
+/* -----------------------------------FOOTER */ 
+
+#futer {
+	margin-top:5px;
+	height: 350px;
+	background-color: #DCDCDC;
+	padding-top: 40px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}
+
+.futerBox {
+	width: 350px;
+	height: 300px;
+}
+
+#futermeni {
+	text-align: center;
+}
+#about h5, #futermeni p, #newsbox p {
+	margin-bottom: 10px;
+	font-size: 20px;
+	font-weight: normal;
+	color: #707070;
+}
+#about p{
+	text-align:justify;
+	font-size: 16px;
+}
+#about ul{
+	margin-top: 20px;
+}
+#about ul li {
+	display: inline-block;
+	margin-right: 20px;
+}
+#about ul li a span {
+	color: #707070;
+}
+#about h6{
+	margin-top: 100px;
+	font-weight:normal;
+	color:#707070;
+}
+
+#forma0 .dugme{
+	margin-top: 10px;
+}
+
+#newsletter{
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+}
+
+/* meni */
+
+
+#futermeni ul li a{
+	font-size:16px;
+}
+
+/* newsletter */
+#newsbox{
+	width: 200px;
+	margin-left: 100px;
+}
+#newsbox form table button{
+	margin-top: 15px;
+}
+
+/* -----------------------------------------------------------------------------------------------------------------------------COLLECTION.HTML */
+
+#omotColl{
+	height:1890px;
+	padding-top: 80px;
+	display:flex;
+	flex-direction:row;
+}
+
+#kolekcije {
+	height: 100%;
+	width: 20%;
+	background-color:#DCDCDC;
+}
+
+#kolekcije h3{
+	text-align: center;
+	font-size: 30px;
+	color: #707070;
+	margin-top: 30px;
+}
+
+#kolekcije ul {
+	margin: 30px 0px 0px 30px;
+}
+#kolekcije ul li{
+	margin-top:10px;
+}
+#kolekcije ul li a{
+	color:#707070;
+	font-size: 25px;
+}
+
+/*----------------------------------------*/
+
+#izbor{
+	height: 100%;
+	width: 80%;
+	background-color: #fff;
+}
+
+#izbor h1{
+	margin: 40px 0px 30px 0px;
+	font-size: 50px;
+	color: #000;
+	text-align: center;
+}
+
+.slicice {
+	width: 100%;
+	height:530px;
+}
+
+.slicice h2{
+	margin-left: 30px;
+	font-size: 30px;
+	color: #000;
+}
+
+/*-------------------------------------------------------------------------------------------------------------------------CONTACT.HTML*/
+
+#kont {
+	width:50%;
+	height: 700px;
+	margin: 0px auto 100px auto;
+	padding-top:80px;
+}
+#kont h1{
+	margin-top: 40px;
+	text-align:center;
+	font-size:50px;
+}
+#kont h2{
+	margin-top:30px;
+	font-size:30px;
+	text-align: center;
+}
+
+/* ------------------ */
+
+#tabela{
+	margin: 30px auto 50px auto;
+	font-size: 20px;
+}
+.naziv{
+	padding-top:10px;
+}
+.text-box, textarea{
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 2px solid #000;
+	border-radius: 4px;
+}
+
+textarea{
+	resize: none;
+}
+
+select {
+	width: 100%;
+	padding: 16px 20px;
+	border: 2px solid #000;
+	border-radius: 4px;
+	background-color: #fff;
+}
+
+/* -------------------------------------------------------------------------------------------------------CRNI.HTML */
+#omotliste{
+	height:700px;
+	padding-top: 80px;
+	display:flex;
+	flex-direction:row;
+}
+
+#lista {
+	height: 100%;
+	width: 20%;
+	background-color:#DCDCDC;
+}
+
+#omotslika {
+	height: 100%;
+	width: 100px;
+	margin: 0px auto;
+	padding-top: 130px;
+}
+#slika{
+	height:409px;
+	width:360px;
+	margin: auto auto;
+	border: 3px solid #000;
+	border-radius: 10px;
+	background-image: url('../images/crni.jpg');
+	background-size:cover;
+	background-position: center;
+}
+#kupovina{
+	height: 90%;
+	width: 40%;
+	margin-top:20px;
+	background-color: #fff;
+	text-align: center;
+}
+#omotslika ul li img {
+	height:100px;
+	width: inherit;
+	margin-bottom: 10px;
+	border:1px solid #000;
+}
+
+#kupovina h1{
+	margin: 40px 0px 30px 0px;
+	font-size: 50px;
+	color: #000;
+	text-align: center;
+}
+
+#kupovina h2{
+	margin: 20px 0px;
+	font-size: 35px;
+}
+
+#kupovina .link{
+	margin-top: 100px;
+}
+
+#ostatak{
+	height: 100%;
+	width: 80%;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-around;
+}

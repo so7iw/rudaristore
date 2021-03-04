@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Rudari Store </title>
+		<meta charset="UTF-8"/>
+		<meta name="author" content="Miloš Stojanovski" />
+		<meta name="keywords" content="Rudari, Hoodie, Store, Sale" />
+		<meta name="description" content="Oficijalna onlajn prodavnica Rudara" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="shortcut icon" href="images/logomini.jpg" />
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<script src="https://kit.fontawesome.com/a39f886e48.js" crossorigin="anonymous"></script>
+	</head>
+	<body>
+		<header id="zaglavlje">
+			<div id="logo">
+				<a href="index.html" title="Rudari"><img src="images/logo1.jpg" alt="logo"/></a>
+			</div>
+			<nav>
+				<ul class="linkovi">
+					<li class="aktivanlink"><a href="index.html">početna</a></li>
+					<li><a href="collection.html">kolekcija</a></li>
+					<li><a href="contact.html">kontakt</a></li>
+				</ul>
+			</nav>
+			<div id="ikonice">
+				<input id="pretraga" type="search" name="search_" value="" placeholder="Pretraga.." > 
+				<ul class="linkovi">
+					<li><a href="#" title="Pretraži"><button><span class="fas fa-search"></span></button></a></li>
+					<li><a href="#" title="Profil"><span class="fas fa-user"></span></a></li>
+					<li><a href="#" title="Korpa"><span class="fas fa-shopping-cart" ></span></a></li>
+				</ul>
+			</div>
+		</header>
+		
+		<section id="kont">
+			<header>
+				<h1>Kontaktirajte nas</h1>
+				<h2>Vaše mišljenje nam je važno</h2>
+			</header>
+			<form action="#" method="get" name="forma" id="forma">
+				<table id="tabela">
+					<tr><td class="naziv">Ime i prezime:</td></tr>
+					<tr><td><input type="text" class="text-box"  id="ImePrezime" name="ImePrezime" placeholder="Petar Perić"/></td></tr>
+					<tr><td class="naziv">Vaš e-mail, za naš odgovor:</td></tr>
+					<tr><td><input type="email" class="text-box" id="mail" name="mail" placeholder="petar.peric@gmail.com"/></td></tr>
+					<tr><td class ="name">Kontaktirate nas zbog:</td></tr>
+					<tr>
+						<td>
+							<select class="lista" id="razlog" name="razlog">
+								<option value="0">Izaberite...</option>
+								<option value="PIT">Pitanja</option>
+								<option value="PRD">Predloga</option>
+								<option value="PRM">Primedbe</option>
+								<option value="DR">Drugi razlog</option>
+							</select>
+						</td>
+					</tr>
+					<tr><td class="naziv">Vaša poruka:</td></tr>
+					<tr><td><textarea name="poruka" cols="40" rows="5"></textarea></td></tr>
+					<tr>
+						<td colspan="2" align="center">
+							<input type="submit" value="Unesi" class="dugme" id="unos" name="unos"/>
+							<input type="reset" value="Ponisti" class="dugme"  id="ponisti" name="ponisti"/>
+						</td>
+				    </tr>
+				</table>
+			</form>
+		</section>
+		
+		<footer id="futer">
+			<section class="futerBox">
+				<article id="about">
+					<h5>O nama</h5>
+					<p>Rudari su počeli kao grupa prijatelja koji su želeli da za sebe osiguraju najbolji kvalitet odeće. Danas, svoj klasičan stil delimo sa svima. Ukažite nam poverenje i nećemo vas izneveriti.</p>
+					<ul>
+						<li><a href="http://www.facebook.com" title="Facebook"><span class="fab fa-facebook-f"></span></a></li>
+						<li><a href="http://www.twitter.com" title="Twitter"><span class="fab fa-twitter"></span></a></li>
+						<li><a href="http://www.instagram.com" title="Instagram"><span class="fab fa-instagram"></span></a></li>
+						<li><a href="rss/rss.xml" title="RSS"><span class="fas fa-rss-square"></span></a></li>
+					</ul>
+					<h6>Copyright &copy; &nbsp;&nbsp;Miloš Stojanovski 12/19 <br> milos&#46;stojanovski&#46;12&#46;19&#64;ict&#46;edu&#46;rs</h6>
+				</article>
+			</section>
+			<section class="futerBox">
+				<article id="futermeni">
+					<p>Footer menu</p>
+					<ul>
+						<li><a href="contact.html">kontaktirajte nas</a></li>
+						<li><a href="size.html" target="_blank">size charts</a></li>
+						<li><a href="#">refund policy</a></li>
+						<li><a href="#">gift card</a></li>
+					</ul>
+				</article>
+			</section>
+			<section class="futerBox">
+				<article id="newsbox">
+					<p>novosti</p>
+					<form action="#" method="get" name="forma0" id="forma0">
+						<table>
+							<tr>
+								<td><input id="newsletter" type="email" name="newsletter" placeholder="e-mail"></td>
+							</tr>
+							<tr>
+								<td><input type="submit" value="Pretplati se" class="dugme" id="sub" name="sub"/></td>
+							</tr>
+						</table>
+					</form>
+				</article>
+			</section>
+		</footer>
+	</body>
+</html>

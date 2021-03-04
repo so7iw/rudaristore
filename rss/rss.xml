@@ -1,0 +1,13 @@
+<?xml version="1.0">
+	<rss version="2.0">
+		<channel>
+		<title>Rudari Store</title>
+		<dedication>Prodavnica odeće</dedication>
+		<link></link>
+			<item>
+				<title>Sniženja</title>
+				<description>Velika sniženja u najavi za januar.</description>
+				<link></link>
+			</item>
+		</channel>
+	</rss>
